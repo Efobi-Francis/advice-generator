@@ -46,7 +46,7 @@ function App() {
             ):(
             <>
               <p className=' uppercase text-sm font-manrope pt-3 tracking-[0.2em] text-[hsl(150,100%,66%)]'>{`Advice #${advices.id}`}</p>
-              <p className=' text-center font-manrope py-2 text-[hsl(193,38%,86%)]'>{`"${advices.advice}"`}</p>
+              <p className=' text-center font-manrope py-2 text-[hsl(193,38%,86%)]'><q>{advices.advice}</q></p>
             </>
           )}
 
@@ -64,12 +64,12 @@ function App() {
               }}
             />
 
-            <motion.button 
+            <button 
               onClick={generateAdviceBtn} 
-              className=' absolute w-16 h-16 rounded-full bg-[hsl(150,100%,66%)] flex justify-center items-center'
+              className=' absolute w-16 h-16 rounded-full bg-[hsl(150,100%,66%)] flex justify-center items-center hover:shadow-[0_0_6px_5px_rgba(0,0,0,0.1)] hover:shadow-[hsl(150,100%,66%)]/50'
             >
               <img src={icon_dice} alt="icon-dice" />
-            </motion.button>
+            </button>
           </div>
 
           
