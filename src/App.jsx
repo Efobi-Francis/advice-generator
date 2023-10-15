@@ -66,7 +66,8 @@ function App() {
 
             <button 
               onClick={generateAdviceBtn} 
-              className=' absolute w-16 h-16 rounded-full bg-[hsl(150,100%,66%)] flex justify-center items-center hover:shadow-[0_0_6px_5px_rgba(0,0,0,0.1)] hover:shadow-[hsl(150,100%,66%)]/40'
+              className=' absolute w-16 h-16 rounded-full bg-[hsl(150,100%,66%)] flex justify-center items-center 
+              hover:shadow-[0_0_6px_5px_rgba(0,0,0,0.1)] hover:shadow-[hsl(150,100%,66%)]/40'
             >
               <img src={icon_dice} alt="icon-dice" />
             </button>
