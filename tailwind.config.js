@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'lg': '1440px'
+    },
     fontFamily: {
       'manrope': ['Manrope', 'system-ui'],
     },
