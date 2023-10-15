@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
 import './App.css'
 
 import pattern_divider_mobile from '/assets/images/pattern-divider-mobile.svg'
@@ -44,9 +45,17 @@ function App() {
 
           <img src={pattern_divider_mobile} alt="divider-mobile" className=' w-full' />
 
-          <button onClick={generateAdviceBtn} className=' absolute -bottom-8 w-16 h-16 rounded-full bg-[hsl(150,100%,66%)] flex justify-center items-center'>
+          <motion.button 
+            animate = {{scale: [1, 1.1, 1]}}
+            transition={{
+              duration: 0.5,
+              ease: "easeInOut",
+              repeat: Infinity,
+            }}
+            onClick={generateAdviceBtn} 
+            className=' absolute -bottom-8 w-16 h-16 rounded-full bg-[hsl(150,100%,66%)] flex justify-center items-center'>
             <img src={icon_dice} alt="icon-dice" />
-          </button>
+          </motion.button>
         </div>
       </div>
 
